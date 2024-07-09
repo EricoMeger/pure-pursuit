@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="pure-pursuit" type="follow_path.py" name="pure_pursuit" output="screen"/>
+    <node pkg="pure-pursuit" type="vel_limiter.py" name="velocity_limiter" output="screen"/>
+</launch>
