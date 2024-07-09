@@ -18,7 +18,7 @@ To run the algorithm, follow these steps:
 
 1. Clone this git repository into your workspace `src` directory:
    ```bash
-   git clone <repository_url>
+   git clone <https://github.com/EricoMeger/pure-pursuit>
    ```
 2. Build the workspace:
     ```bash
