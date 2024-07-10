@@ -8,7 +8,7 @@ This repository contains an implementation of the Pure Pursuit algorithm for pat
 
 ### `vel_limiter`
 
-The `vel_limiter` node limits the robot's velocity. It caps the robot's velocity at 0.4 m/s and 0.4 rad/s, and uses LiDAR readings to stop the robot if there is an obstacle nearby. This behavior is based on the `/scan_min` topic, which publishes the smallest range within the 90 degrees in front of the LiDAR.
+The `vel_limiter` node limits the robot's velocity. It caps the robot's velocity at 0.4 m/s and 0.4 rad/s, and uses LiDAR readings to stop the robot if there is an obstacle nearby. This behavior is based on the `/range_min` topic, which publishes the smallest range within the 90 degrees in front of the LiDAR.
 
 `vel_limiter` is optional. If you do not want to cap your robot's velocity, you can change the topic that `follow_path` publishes its velocities to `cmd_vel`.
 
