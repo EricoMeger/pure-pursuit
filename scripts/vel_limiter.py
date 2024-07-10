@@ -8,7 +8,7 @@ class VelocityLimiter():
     def __init__(self):
         self.vel_sub = rospy.Subscriber("/velocidade", Twist, self.velocidade_callback)
         self.vel_pub = rospy.Publisher("/cmd_vel", Twist, queue_size=10)
-        self.scan_sub = rospy.Subscriber("/scan_min", Float64, self.scan_callback)
+        self.scan_sub = rospy.Subscriber("/range_min", Float64, self.scan_callback)
 
         self.velocidade = Twist()
         self.min_dist = 100000.0
